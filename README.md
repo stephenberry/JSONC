@@ -1,7 +1,7 @@
 # JSONC
-JSON with Comments. This is a simple explanation of the specification.
+JSON with Comments. This is a simple reference specification for JSONC.
 
-JSONC allows C, C++, or Javascript style comments, all of which are the same.
+JSONC allows C and Javascript style comments (both the same).
 
 > `.jsonc` is the standard file extension for JSONC
 
