@@ -17,7 +17,7 @@ Single line comments use double forward slashes `//` and the comment continues t
 
 ## Block Comments
 
-Block comments support in place commenting and multi-line comments. JSONC restricts their usage to outside of strings.
+Block comments support in place commenting and multi-line comments.
 
 ```jsonc
 /*
@@ -26,6 +26,14 @@ This can span multiple lines.
 */
 {
   "key": /*An in place comment*/ "a string"
+}
+```
+
+JSONC restricts their usage to outside of strings. Within strings they are considered part of the string.
+
+```json
+{
+	"Key": "One upon /*This comment is part of the string*/ a time"
 }
 ```
 
