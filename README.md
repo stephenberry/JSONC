@@ -1,7 +1,9 @@
 # JSONC
 JSON with Comments. This is a simple reference specification for JSONC.
 
-JSONC allows C and Javascript style comments (both the same).
+JSONC makes JSON documents more useful for humans and avoids embedding comments as part of the JSON document, which hurts performance and clarity.
+
+JSONC allows C and Javascript style comments. When a JSONC document is read, all comments must be ignored and the result is a JSON structure identical to a JSONC document with all the comments stripped.
 
 > `.jsonc` is the standard file extension for JSONC
 
