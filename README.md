@@ -9,7 +9,7 @@ JSONC allows C, C++, or Javascript style comments, all of which are the same.
 
 Single line comments use double forward slashes `//` and the comment continues to the end of the line even if there are new comment symbols.
 
-```json
+```jsonc
 {
   "x": 5 // this is a line comment
 }
