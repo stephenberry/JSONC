@@ -31,11 +31,13 @@ This can span multiple lines.
 }
 ```
 
-JSONC restricts their usage to outside of strings. Within strings they are considered part of the string.
+JSONC restricts their usage to outside of strings (and therefore keys). Within strings they are considered part of the string.
 
 ```json
 {
-	"Key": "One upon /*This comment is part of the string*/ a time"
+	"Key": "One upon /*This comment is part of the string*/ a time",
+  "Example": "Another example //of comment syntax as part of a string",
+  "A /*key with comment syntax*/": "The key contains the comment"
 }
 ```
 
