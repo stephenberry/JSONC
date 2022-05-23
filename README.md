@@ -12,8 +12,7 @@ JSONC allows C and Javascript style comments. When a JSONC document is read, all
 Single line comments use double forward slashes `//` and the comment continues to the end of the line even if there are new comment symbols.
 
 ```jsonc
-{
-  "x": 5 // this is a line comment
+{ "x": 5 // this is a line comment
 }
 ```
 
@@ -26,16 +25,13 @@ Block comments support in place commenting and multi-line comments.
 Here is a block comment.
 This can span multiple lines.
 */
-{
-  "key": /*An in place comment*/ "a string"
-}
+{ "key": /*An in place comment*/ "a string" }
 ```
 
 JSONC restricts their usage to outside of strings (and therefore keys). Within strings they are considered part of the string.
 
 ```json
-{
-	"Key": "One upon /*This comment is part of the string*/ a time",
+{ "Key": "One upon /*This comment is part of the string*/ a time",
   "Example": "Another example //of comment syntax as part of a string",
   "A /*key with comment syntax*/": "The key contains the comment"
 }
