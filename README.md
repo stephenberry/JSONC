@@ -37,3 +37,7 @@ JSONC restricts their usage to outside of strings (and therefore keys). Within s
 }
 ```
 
+Additionally much like c and c++ nested block comments are invalid.
+```json
+/* /* This does not work */ The first comment close sequence closes the outer comment */
+```
