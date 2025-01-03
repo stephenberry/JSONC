@@ -1,10 +1,9 @@
 # JSONC
-JSON with Comments. This is a simple reference specification for JSONC.
+This document explains JSON with Comments. It aims to be a simple reference specification for JSONC. JSONC is a format based on JSON but with some small features and more lenient parsing behaviors, which are specified below.
 
-JSONC makes JSON documents more useful for humans and avoids embedding comments as part of the JSON document, which hurts performance and clarity.
+**Why JSONC?** JSONC makes JSON documents more useful for humans and avoids embedding comments as part of the JSON document, which hurts performance and clarity. The main feature of JSONC is that it allows C and Javascript style comments. When a JSONC document is read, when all comments are ignored it usually leads to a JSON structure identical to a JSONC document with all the comments stripped.
 
-JSONC allows C and Javascript style comments. When a JSONC document is read, all comments must be ignored and the result is a JSON structure identical to a JSONC document with all the comments stripped.
-
+> [!NOTE]
 > `.jsonc` is the standard file extension for JSONC
 
 ## Line Comments
