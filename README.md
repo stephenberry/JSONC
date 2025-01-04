@@ -36,7 +36,27 @@ JSONC restricts their usage to outside of strings (and therefore keys). Within s
 }
 ```
 
-Additionally much like c and c++ nested block comments are invalid.
+Additionally, just like in C and C++, nested block comments are invalid.
 ```json
 /* /* This does not work */ The first comment close sequence closes the outer comment */
+```
+
+## Trailing commas
+
+JSONC usually supports trailing commas for use in config files, although
+some implementations may not accept them or cause warnings. Inside a json object
+(a key value object) or a json array (a list), a trailing comma can be used in
+supprting implementations like this:
+
+```json
+{"Key1": "Value1",
+ "Key2": "Value2",
+}
+```
+Or like this:
+```
+[
+1, 2,
+3, 4,
+]
 ```
